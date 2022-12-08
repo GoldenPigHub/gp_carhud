@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" >
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/fontawesome.min.js"></script>
-    <link rel="stylesheet" href="css/css.css">
-</head>
-<body>
-    <div class="container">       
-        <div class="status-hud">
-            <div class="status-bar" id="health-bar"> <i class="fas fa-heart"></i> <div class="status-bar-bg" id="heal"></div></div>
-            <div class="status-bar" id="stamina-bar"> <i class="fas fa-running"></i> <div class="status-bar-bg" id="stamina"></div></div>
-            <div class="status-bar" id="hunger-bar"> <i class="fas fa-apple-alt"></i> <div class="status-bar-bg" id="hunger"></div></div>
-            <div class="status-bar" id="water-bar"> <i class="fas fa-tint"></i> <div class="status-bar-bg" id="thirst"></div></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoldenPig Car hud</title>
+    <script
+      src="https://kit.fontawesome.com/b4c983862f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link href="/html/index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="speedometer" id="speedometer">
+      <div class="boxes-spd">
+        <div>
+          <i class="fas fa-tachometer-alt"></i><span> </span
+          ><span class="speed">100</span><span> </span
+          ><span class="derivados">MPH</span>  <!-- change if you want to use kmh -->
         </div>
+      </div>
     </div>
-    <div class="container-horse">
-        <div class="horse-hud">
-            <div class="status-bar" id="horsestamina-bar"> <i class="fas fa-horse-head"></i> <div class="status-bar-bg" id="horsestamina"></div></div>
+    <div class="gasometer" id="gasometer">
+      <div class="boxes-spdgas">
+        <div>
+          <i class="fas fa-gas-pump"></i><span> </span
+          ><span class="gasoline">100</span><span> </span
+          ><span class="derivados">Fuel</span>
         </div>
+      </div>
     </div>
-    <script src="js/main.js"></script>
-</body>
+  </body>
+  <script src="/html/index.js"></script>
 </html>
-    
